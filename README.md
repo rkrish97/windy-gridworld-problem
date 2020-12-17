@@ -14,3 +14,11 @@ the old action as the new action. By using this, the loop proceeds till a termin
 time steps and the corresponding episode count during that time step is recorded in an array which can
 later be plotted to observe how it varies. Since the arrangement of the cell array for Q varies from how
 an actual coordinate system looks like, it has to be switched in order to plot this graph. 
+
+## Discussion:
+Sometimes, the algorithm is not able to converge to an optimal policy and gets stuck in between. This
+tends to happen because it is a drawback in the system as given in the book. The book states that SARSA
+doesn’t solve this unique problem and that is why we need to move to a different technique. But again,
+most of the times, the algorithm converges to an optimal policy. Sometimes it also converges to an
+alternate path which is slightly different from the original one. This is stated in the example in the book
+too where they had the shortest step length of 15 but had an average length of 17.
